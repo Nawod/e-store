@@ -1,50 +1,76 @@
-# React + TypeScript + Vite
+# E-Store Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+E-Store is a fully responsive e-commerce web application designed to showcase and manage products, a shopping cart, and a user-friendly login system.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+-   **Product Listing**: Displays a dynamic list of products with details like price, title, and description.
+-   **Product Details**: View detailed information about a product.
+-   **Shopping Cart**: Add, update, or remove items from the cart.
+-   **User Authentication**: Login functionality with validation.
+-   **Responsive Design**: Optimized for desktop and mobile devices.
+-   **Toast Notifications**: Provides instant feedback for actions like adding products to the cart.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+-   **React 18**
+-   **Vite** (Development Environment)
+-   **TypeScript**
+-   **Redux Toolkit** (State Management)
+-   **React Router** (Routing)
+-   **Tailwind CSS** (Styling)
+-   **MUI (Material-UI)** (UI Components)
+-   **Yup & React Hook Form** (Form Validation)
+-   **React Toastify** (Toast Notifications)
+
+---
+
+## Installation and Setup
+
+Follow these steps to run the project locally:
+
+### **1. Clone the Repository**
+
+```bash
+git clone <repository-url>
+cd <repository-folder>
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### **2. Install Dependencies**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Install all required dependencies using npm or Yarn:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
+# OR
+yarn
 ```
+
+### **3. Run the Development Server**
+
+Start the development server:
+
+```bash
+npm run dev
+# OR
+yarn dev
+```
+
+### **4. Open in Browser**
+
+The application will be running at:
+
+```bash
+http://localhost:5173
+```
+
+### **5. Login Credentials**
+
+To log in to the application, use the following credentials:
+
+-   **Email : admin@mail.com**
+-   **Password : admin@123**
