@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-stroke-white::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+@layer base {
+    .container {
+        @apply xl:max-w-[1280px] w-full sm:px-10 px-2 mx-auto;
+    }
+    .section-title {
+        @apply text-4xl sm:text-6xl uppercase font-bold text-blue-500 pt-4 pb-12 text-center;
+    }
+}
